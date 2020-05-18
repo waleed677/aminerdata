@@ -1,0 +1,272 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/banner1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: relative;
+    z-index: 10;
+}
+
+
+header.masthead .overlay {
+  position: absolute;
+  background: linear-gradient(to right,rgba(59,162,255,.9),rgb(105,99,255,.8));
+  height: 100%;
+  width: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  
+  display: block;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.form-control-lg::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.5; /* Firefox */
+  font-size: 16px;
+}
+
+
+.navbar_menu{width: 100%; background: black; opacity: 0.9; height: 10%; padding: 13px 10% 0 2%;}
+.navbar_bottom_menu{width: 100%; background: gray; opacity: 1.0; height: 10vh;}
+/* Logo Tasarımı */
+.logo{ color: white; text-decoration: none; font-size: 20px; float: left; padding-top: 3px;}
+.logo:hover{ color: white; text-decoration: none; font-size: 24px; font-style: italic; }
+
+.arama{ width: 45%; display: block; float: left; position: absolute; left: 23%; right: 2%;}
+.input-group span{ font-size: 19px;  color: white; }
+.space {
+  margin-top: 50px;
+}
+
+main{
+   border-bottom: 1px solid #d5d5d5;
+  
+}
+
+.product-thumbnail .owl-nav  {display: none;}
+
+
+.mt-80 { margin-top: 8px }.mb-80 { margin-bottom: 8px }
+.single-product-name {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.justify{
+  text-align: justify;
+}
+.mybtn{
+  float: left;
+  margin-top: 5px;  
+  width: auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+    margin: 0 5px 4px 0;
+    padding: 1px 5px;
+    background: #f6f7f9;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+}
+.fix-img{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+
+.profile 
+{
+    min-height: 170px;
+    display: inline-block;
+    }
+
+
+.divider 
+{
+    border-top:1px solid rgba(0,0,0,0.1);
+    }
+.emphasis 
+{
+    border-top: 4px solid transparent;
+    }
+.emphasis:hover 
+{
+    border-top: 4px solid #1abc9c;
+    }
+.emphasis h2
+{
+    margin-bottom:0;
+    }
+span.tags 
+{
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+    margin-bottom: 3px;
+    display: -webkit-inline-box;
+    }
+
+    .paper-title{
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    .authors{
+      color: green;
+    font-size: 14px;
+    float: left;
+    }
+    .duration{
+      float: right;
+    font-size: 14px;
+    }
+
+          .image-container {
+              position: relative;
+          }
+  
+          .image {
+              opacity: 1;
+              display: block;
+              width: 100%;
+              height: auto;
+              transition: .5s ease;
+              backface-visibility: hidden;
+          }
+  
+          .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+          }
+  
+          .image-container:hover .image {
+              opacity: 0.3;
+          }
+  
+          .image-container:hover .middle {
+              opacity: 1;
+          }
