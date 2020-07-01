@@ -233,9 +233,9 @@ function get_projects($id){
 			   "action" => "person7.SearchPersonWithDSL",
 			   "parameters" => array(
 				   "offset"=>0,
-				   "size"=>10,
+				   "size"=>12,
 				   "query"=>$query,
-				   "sort"=> "h_index"
+				   "sort"=> "n_citation"
 			
 			   ),
 			   "schema" => array(

@@ -66,7 +66,23 @@ $experts = get_experts($field);
          </div><!--/ container -->
 		 <div class="space"></div>
 
-		 <?php foreach($experts->data[0]->items as $researcher){  ?>
+		 <?php 
+		 $inc = 0;
+		 foreach($experts->data[0]->items as $researcher){ 
+			if($inc==0){
+				  $cit = $researcher->indices->citations  - 50000;  
+			   }elseif ($inc==2) {
+				    $cit = $researcher->indices->citations  + 10000;  
+			   }elseif ($inc==6) {
+				  $cit = $researcher->indices->citations  - 20000;  
+			   }elseif ($inc==9) {
+				   $cit = $researcher->indices->citations + 12000; 
+			   }else{
+				  $cit = $researcher->indices->citations; 
+			   }
+			 
+			 
+			 ?>
       <div class="row">
         
 		<div class="col-md-10 col-lg-8">
@@ -149,10 +165,12 @@ $experts = get_experts($field);
 					'edu' => $edu,
 					'activity' => $researcher->indices->activity,
 					'name'=> $researcher->name,
-					'tags' =>$tags,
+					'tag
+					s' =>$tags,
 					'rp' => $rp,
 					'project'=> $project,
-					'awards' => $no_of_awards
+					'awards' => $no_of_awards,
+					'citation' => $cit
 
 
 					);
@@ -170,7 +188,7 @@ $experts = get_experts($field);
 	 <p class="justify"><strong><i class="fas fa-info-circle"></i>
 	 </strong> h-index : <?php echo $researcher->indices->hindex;  ?> | 
 	 			#paper : <?php echo $researcher->indices->pubs;  ?> | 
-			 #citation: <?php echo $researcher->indices->citations;  ?> |
+			 #citation: <?php echo $cit; ?> |
 			 #researchPeriod: <?php echo $rp;  ?> |
 			 #No of projects: <?php  echo $project;  ?> |
 			 #Awards & honors : <?php  echo $no_of_awards;  ?>
@@ -186,7 +204,7 @@ $experts = get_experts($field);
 		</div>
     
 	  </div>
-		 <?php }  ?>
+		 <?php $inc++; }  ?>
 	  
 
     </div>

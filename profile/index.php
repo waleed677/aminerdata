@@ -172,15 +172,15 @@ foreach($tags as $skills) { ?>
 											aria-labelledby="basicInfo-tab">
 
 
-											<div class="row">
-												<di	v class="col-sm-3 col-md-2 col-5">
+											<!-- <div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
 													<label style="font-weight:bold;">BIO</label>
 												</di>
 												<div class="col-md-8 col-6">
 												<p class="justify"><?php echo $bio;  ?></p>
 												</div>
 											</div>
-											<hr />
+											<hr /> -->
 
 											<div class="row">
 												<div class="col-sm-3 col-md-2 col-5">
